@@ -1,5 +1,5 @@
 <html>
-
+<!-- Just creating a title and linking all the external sheets -->
 <head>
     <title>Week 6 Lab David Lin</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -7,28 +7,32 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
     <script src="lab6_Map.html.js" defer></script>
+    <!-- This library needs us to style the map in the header under another div -->
     <style>
-        #map { height: 800px; }
+        #map { height: 600px; }
 
     </style>
 
 </head>
 
 <body>
+    <!-- For some reason it was not bolding without the font-weight so I added it -->
     <h1 style="font-weight: strong;"> Map of US</h1>
+    <!-- This is the box/area that the map will be generated -->
     <div id="map"></div>
+    <!-- Creating containers for the dynamic text generation, used 1,2,3 instead of one,two,three so it was easier to code slightly -->
     <div id="div-container">
         <div id="cord1">
             <h1 id="latAndLong1"></h1>
-            <p id="locality1"></p>
+            <h3 id="locality1"></h3>
         </div>
         <div id="cord2">
             <h1 id="latAndLong2"></h1>
-            <p id="locality2"></p>
+            <h3 id="locality2"></h3>
         </div>
         <div id="cord3">
             <h1 id="latAndLong3"></h1>
-            <p id="locality3"></p>
+            <h3 id="locality3"></h3>
         </div>
     </div>
 
